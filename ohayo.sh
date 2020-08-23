@@ -24,7 +24,6 @@ while [ "$1" != "" ] ; do
 	esac
 	shift
 done
-echo $device $duration
 
 stty -F /dev/ttyUSB0 9600 raw -echo
 echo -n -e '\xA0\x01\x01\xA2' > $device
