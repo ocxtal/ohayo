@@ -25,7 +25,7 @@ while [ "$1" != "" ] ; do
 	shift
 done
 
-stty -F /dev/ttyUSB0 9600 raw -echo
+stty -F $device 9600 raw -echo
 echo -n -e '\xA0\x01\x01\xA2' > $device
 sleep $duration
 echo -n -e '\xA0\x01\x00\xA1' > $device
