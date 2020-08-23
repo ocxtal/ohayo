@@ -12,7 +12,7 @@ See also: https://github.com/andrewintw/usb-powered-relay
 # ./ohayo.sh --device /dev/ttyUSB0 kill
 ```
 
-*`on` for toggling, `kill` for long press*
+*`on` for short, `kill` for long press.*
 
 ## Copyright and License
 
